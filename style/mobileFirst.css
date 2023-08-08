@@ -158,7 +158,8 @@ html {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: top;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: justify;
     background-color: black;
@@ -170,10 +171,8 @@ html {
     align-items: center;
     text-indent: 20px;
     text-align: justify;
-    padding: 25px;
-    margin-top: 50px;
-    color: white;
-    
+    padding: 15px 25px 25px 25px;
+    color: white;  
 }
 
 #sobre-nos #text-sobre-nos > h2 {
@@ -189,4 +188,106 @@ html {
     width: 100%;
     text-align: center;
     line-height: 1.5rem;
+}
+
+#sobre-nos #img-cozinha {
+    width: 350px;
+    height: 250px;
+
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    background: url(../img/cozinha.jpg);
+    background-size: cover;
+}
+
+/* cardapio */
+
+#cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgba(12, 12, 12, 0.897), rgba(15, 15, 15, 0.932)), url(../img/cardapio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#cardapio #cardapio-principal {
+    padding: 25px;
+}
+
+#cardapio #cardapio-principal > h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#cardapio #cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards .card-pizza-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 420px;
+    margin-top: 50px;
+    border: 1px solid black;
+    background-color: rgb(90, 80, 80);
+    
+}
+
+.card-pizza-infos .card-img-pizzas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    border: 1px solid black;
+}
+
+.list-card-pizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+
+.list-card-pizza > h3 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.list-card-pizza > h4 {
+    font-size: 1.2rem;
+   text-align: center;
+   margin: 5px 0;
+   text-transform: uppercase;
+}
+
+.list-card-pizza > h4 > span {
+    font-size: 1.4rem;
+    color:#585858;
+    margin-left: 10rem;
+    text-decoration: underline;
+}
+
+.list-card-pizza > button {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background: var(--yello);
+    border: none;
+    border-radius: 5px;
 }
