@@ -14,9 +14,13 @@
     box-sizing: border-box;
 }
 
-html { 
+body { 
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body.ativo {
+    overflow: hidden;
 }
 
 :root {
@@ -51,10 +55,9 @@ html {
 #menu-list {
     display: none;
     justify-content: center;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    left: 0;
     background: black;
 }
 
@@ -75,17 +78,27 @@ html {
     font-size: 2rem;
 }
 
+#menu-list > ul > li > a:hover {
+    color: var(--yello);
+}
+
 #menu-list > ul > li > a > i {
     font-size: 1.5rem;
 }
 
-#menu {
+#menu-list.ativo {
+    display: block;
+    overflow-y: none;
+}
+
+.menu {
     margin: 10px;
     padding-right: 15px;
     z-index: 1;
+    cursor: pointer;
 }
 
-#menu .barra-menu {
+.menu .barra {
     display: block;
     width: 25px;
     height: 2px;
@@ -93,6 +106,10 @@ html {
     background: white;
     overflow-y: hidden;
 }
+
+.menu.ativo .barra:nth-child(1) {transform: translateY(8px) rotate(45deg);}
+.menu.ativo .barra:nth-child(2) {opacity: 0;}
+.menu.ativo .barra:nth-child(3) {transform: translateY(-8px) rotate(-45deg);}
 
 /* main */
 
@@ -296,5 +313,47 @@ html {
     background: var(--yello);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     
+}
+
+/* contatos */
+
+#contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: black;
+}
+
+#contatos #contatos-infos {
+    color: white;
+    text-align: center;
+}
+
+#contatos #contatos-infos > h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#contatos #contatos-infos > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#contatos #contatos-infos > span > i {
+    margin-right: 10px;
+}
+
+/* header */
+
+#header-inf {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
 }
