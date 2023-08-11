@@ -15,11 +15,6 @@
     overflow-x: hidden;
 }
 
-
-body.ativo {
-    overflow: hidden;
-}
-
 :root {
     --yello: #f8b31e;
 }
@@ -85,7 +80,6 @@ body.ativo {
 
 #menu-list.ativo {
     display: block;
-    overflow-y: none;
 }
 
 .menu {
@@ -101,7 +95,6 @@ body.ativo {
     height: 2px;
     margin: 5px;
     background: white;
-    overflow-y: hidden;
 }
 
 .menu.ativo .barra:nth-child(1) {transform: translateY(8px) rotate(45deg);}
@@ -248,12 +241,11 @@ body.ativo {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 420px;
+    height: 450px;
     margin-top: 50px;
     border: 1px solid black;
     background-color: rgb(90, 80, 80);
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
 }
 
 .card-pizza-infos .card-img-pizzas {
@@ -261,13 +253,13 @@ body.ativo {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 220px;
+    height: 550px;
     border: 1px solid black;
 }
 
 .card-pizza-infos .card-img-pizzas > img {
     width: 35rem;
-    height: 220px;
+    height: auto;
 }
 
 .list-card-pizza {
@@ -311,7 +303,6 @@ body.ativo {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
 /* contatos */
