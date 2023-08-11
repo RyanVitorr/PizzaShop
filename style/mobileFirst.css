@@ -122,11 +122,12 @@
     align-items: center;
     justify-content: center;
     text-align: center; 
-    margin-top: 80px;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 #conteudo-principal .conteudo-principal-text {
-    margin: 75px 0 70px 0;
     text-transform: uppercase;
     width: auto;
     height: auto;
@@ -134,8 +135,8 @@
 
 
 #conteudo-principal .conteudo-principal-text > h1 {
-    padding: 25px 25px 10px 25px;
-    font-size: 3.5em;
+    padding: 5px 3rem;
+    font-size: 3em;
     color: var(--yello); 
     font-family: 'Indie Flower', cursive;
 }
@@ -143,6 +144,7 @@
 #conteudo-principal .conteudo-principal-text > h2 {
     padding: 0 120px;
     font-family: 'Indie Flower', cursive;
+    margin-top: 1rem;
 }
 
 #conteudo-principal .conteudo-principal-btn {
@@ -150,6 +152,7 @@
     flex-direction: column;
     width: auto;
     height: auto;
+    margin-top: rem;
 }
 
 #conteudo-principal .conteudo-principal-btn > button {
@@ -188,7 +191,7 @@
 
 #sobre-nos #text-sobre-nos > h2 {
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Indie Flower', cursive;
     
