@@ -275,12 +275,14 @@
 .list-card-pizza > h3 {
     text-transform: uppercase;
     text-decoration: underline;
+    margin-top: 10px;
 }
 
 .list-card-pizza > h4 {
    font-size: 1.1rem;
    text-align: center;
    text-transform: uppercase;  
+   margin-bottom: 8px;
 }
 
 .list-card-pizza > h4 > span {
