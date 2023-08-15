@@ -89,6 +89,7 @@
     cursor: pointer;
 }
 
+
 .menu .barra {
     display: block;
     width: 25px;
@@ -120,16 +121,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    text-align: center; 
-    margin-top: 30px;
     width: 100%;
     height: 100%;
 }
 
 #conteudo-principal .conteudo-principal-text {
     text-transform: uppercase;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -144,7 +144,6 @@
 #conteudo-principal .conteudo-principal-text > h2 {
     padding: 0 120px;
     font-family: 'Indie Flower', cursive;
-    margin-top: 1rem;
 }
 
 #conteudo-principal .conteudo-principal-btn {
@@ -152,31 +151,37 @@
     flex-direction: column;
     width: auto;
     height: auto;
-    margin-top: rem;
+    margin-top: 4rem;
 }
 
-#conteudo-principal .conteudo-principal-btn > button {
+#conteudo-principal .conteudo-principal-btn .botao {
     width: 180px;
     height: 50px;
     border-radius: 5px;
     border: none;
-    margin-bottom: 30px;
+    margin-top: 2rem;
     background: #f8b31e;
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+#conteudo-principal .conteudo-principal-btn .botao:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: #ffc506;
 }
 
 /* sobre nós */
 
 #sobre-nos {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
     background-color: black;
+    padding: 4rem;
 }
 
 #sobre-nos #text-sobre-nos {
@@ -211,6 +216,7 @@
     border: 1px solid rgba(255, 255, 255, 0.445);
     background: url(../img/cozinha.jpg);
     background-size: cover;
+    margin-bottom: 2rem;
 }
 
 /* cardapio */
@@ -219,7 +225,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background: linear-gradient(rgba(12, 12, 12, 0.897), rgba(15, 15, 15, 0.932)), url(../img/cardapio.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -249,10 +254,9 @@
     align-items: center;
     width: 400px;
     height: 450px;
-    margin-top: 50px;
+    margin: 50px 0;
     border: 1px solid black;
     background-color: rgb(90, 80, 80);
-    margin-bottom: 50px;  
 }
 
 .card-pizza-infos .card-img-pizzas {
@@ -276,24 +280,24 @@
     text-align: center;
     width: 100%;
     height: 100%;
+    padding: 0.2rem;
     background-color: rgb(221, 221, 221);
 }
 
 .list-card-pizza > h3 {
     text-transform: uppercase;
     text-decoration: underline;
-    margin-top: 10px;
 }
 
 .list-card-pizza > h4 {
-   font-size: 1.1rem;
+   font-size: 1rem;
    text-align: center;
    text-transform: uppercase;  
    margin-bottom: 8px;
 }
 
 .list-card-pizza > h4 > span {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color:#585858;
     margin-left: 10rem;
     text-decoration: underline;
@@ -331,7 +335,7 @@
     font-size: 2.5rem;
 }
 
-#contatos #contatos-infos > span {
+#contatos #contatos-infos > div > span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,7 +343,7 @@
     cursor: pointer;
 }
 
-#contatos #contatos-infos > span > i {
+#contatos #contatos-infos > div > span > i {
     margin-right: 10px;
 }
 

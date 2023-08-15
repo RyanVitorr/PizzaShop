@@ -7,4 +7,5 @@ const html = document.getElementById('body');
 menu.addEventListener('click', () => {
     menu.classList.toggle('ativo');
     listaMenu.classList.toggle('ativo');
-})
+});
+

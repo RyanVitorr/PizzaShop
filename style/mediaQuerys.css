@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px) {
+
+
+    /* navegação */
+
+    #navegation {
+        justify-content: space-around; 
+    }
+
+
+    #menu-list {
+        display: flex;
+        position: static;
+        width: auto;
+        height: auto;
+        background: black;
+    }
+
+    #menu-list > ul {
+        display: flex;
+        margin-top: 0;
+    }
+
+    #menu-list > ul > li {
+        display: inherit;
+        margin: 0;
+        margin-left: 1.5rem;
+    }
+
+
+    #menu-list > ul > li > a {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    #menu-list > ul > li > a > i {
+        font-size: 1rem;
+    }
+
+
+    .menu{ display: none;}
+
+
+
+    /* main */
+
+    #conteudo-principal .conteudo-principal-btn {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;  
+    }
+
+    #conteudo-principal .conteudo-principal-btn > button {
+        margin-top: 0;  
+        margin-right: 2rem;   
+    }
+
+
+    #sobre-nos {
+        flex-direction: row;   
+    }
+
+    #sobre-nos #text-sobre-nos {
+        width: 410px;  
+    }
+
+    #contatos #contatos-infos > div {
+        display: flex;
+    }
+
+    #contatos #contatos-infos > div  > span {
+        margin-left: 2rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1025px) {
+
+
+    #cardapio #cardapio-principal > h1 {
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    #cardapio #cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #cards .card-pizza-infos {
+        margin: 0;
+    }
+}
