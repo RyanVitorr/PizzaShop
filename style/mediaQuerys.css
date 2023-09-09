@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 
 
     /* navegação */
@@ -46,20 +46,51 @@
 
     /* main */
 
-    #conteudo-principal .conteudo-principal-btn {
+
+    #first-section {
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    #conteudo-principal {
         display: flex;
-        flex-direction: row;
-        margin-top: 4rem;  
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        height: 100vh;
+        width: 100%;
     }
 
-    #conteudo-principal .conteudo-principal-btn > button {
-        margin-top: 0;  
-        margin-right: 2rem;   
+    .conteudo-principal-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 3rem 0;
     }
-
+    
+    .conteudo-principal-text > h1 {
+        width: 100%;
+        text-align: center;
+        font-family: "Indie Flower", cursive;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: var(--yello);
+    }
+    
+    .conteudo-principal-text > h2 {
+        width: 100%;
+        text-align: center;
+        font-family: "Indie Flower", cursive;
+        text-transform: uppercase;
+    }
 
     #sobre-nos {
-        flex-direction: row;   
+        flex-direction: row; 
+        gap: 50px;  
     }
 
     #sobre-nos #text-sobre-nos {

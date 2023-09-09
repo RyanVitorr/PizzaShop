@@ -107,91 +107,82 @@
 #first-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
+    padding: 50px 10px;
     background: black;
     color: white;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.555), rgb(0, 0, 0)), url(../img/fundopizza.jpg);
+    background-image: linear-gradient(rgba(29, 29, 29, 0.212), rgb(0, 0, 0)), url(../img/fundopizza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#conteudo-principal {
+.conteudo-principal-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    gap: 10px;
+    padding: 30px;
+    margin: 3rem 0;
 }
 
-#conteudo-principal .conteudo-principal-text {
+.conteudo-principal-text > h1 {
+    width: 260px;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-size: 40px;
     text-transform: uppercase;
-    width: 100%;
-    height: auto;
-}
-
-
-#conteudo-principal .conteudo-principal-text > h1 {
-    padding: 5px 3rem;
-    font-size: 3em;
-    color: var(--yello); 
-    font-family: 'Indie Flower', cursive;
-}
-
-#conteudo-principal .conteudo-principal-text > h2 {
-    padding: 0 120px;
-    font-family: 'Indie Flower', cursive;
-}
-
-#conteudo-principal .conteudo-principal-btn {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    margin-top: 4rem;
-}
-
-#conteudo-principal .conteudo-principal-btn .botao {
-    width: 180px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 2rem;
-    background-color: var(--yello);
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-#conteudo-principal .conteudo-principal-btn .botao.hover {
-    border: 1px solid black;
-    background-color: transparent;
     color: var(--yello);
+}
+
+.conteudo-principal-text > h2 {
+    width: 170px;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    text-transform: uppercase;
+}
+
+.conteudo-principal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botao {
+    width: 150px;
+    height: 40px;
+    background-color: var(--yello);
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 /* sobre nós */
 
 #sobre-nos {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
     background-color: black;
-    padding: 4rem;
+    padding: 15px;
 }
 
-#sobre-nos #text-sobre-nos {
+#text-sobre-nos {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-indent: 20px;
     text-align: justify;
-    padding: 15px 25px 25px 25px;
-    color: white;  
+    color: white; 
+    margin-bottom: 30px;
 }
 
 #sobre-nos #text-sobre-nos > h2 {
@@ -231,7 +222,7 @@
 }
 
 #cardapio #cardapio-principal {
-    padding: 25px;
+    padding: 30px;
 }
 
 #cardapio #cardapio-principal > h1 {
@@ -252,8 +243,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 450px;
+    width: 350px;
+    height: 400px;
     margin: 50px 0;
     border: 1px solid black;
     background-color: rgb(90, 80, 80);
@@ -287,13 +278,16 @@
 .list-card-pizza > h3 {
     text-transform: uppercase;
     text-decoration: underline;
+    font-size: 18px;
+    overflow: hidden;
 }
 
 .list-card-pizza > h4 {
-   font-size: 1rem;
+   font-size: 15px;
    text-align: center;
    text-transform: uppercase;  
    margin-bottom: 8px;
+   overflow: hidden;
 }
 
 .list-card-pizza > h4 > span {
